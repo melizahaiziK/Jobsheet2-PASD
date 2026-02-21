@@ -36,3 +36,22 @@ jawaban : berbeda karena sebelum pemanggilan yang kedua, terdapat perubahan nila
 mhs1.ubahKelas("SI 2K");
 mhs1.updateIpk(3.60);
 disitu mangkannya hasil output methodnya berubah disaat method tampilkanInformasi() yang kedua ditampilkan.
+
+PERTANYAAN PERCOBAAN 3
+1.	Pada class Mahasiswa di Percobaan 3, tunjukkan baris kode program yang digunakan untuk mendeklarasikan konstruktor berparameter!
+Jawaban : public Mahasiswa11 (String nm, String nim, double ipk, String kls) karena memiliki beberapa parameter, yaitu nm, nim, ipk, dan kls, yang dipakai utk membaca atribut object di fungsi main
+
+2.	Perhatikan class MahasiswaMain. Apa sebenarnya yang dilakukan pada baris program berikut? 
+Mahasiswa11 mhs2 = new Mahasiswa11("Annisa Nabila", "2141720160", 3.25, "TI 2L");
+Jawaban : itu proses instansiasi objek, yaitu membuat objek baru dari class Mahasiswa11, nama object yang dibuat itu mhs2 dan new Mahasiswa11 ini utk memanggil konstruktor berparameter untuk membuat objek baru.
+
+3.	Hapus konstruktor default pada class Mahasiswa, kemudian compile dan run program. Bagaimana hasilnya? Jelaskan mengapa hasilnya demikian!
+jawaban : akan terjadi error di MahasiswaMain11.java, karena class nya tidak lagi memiliki konstruktor tanpa parameter, dan program tidak bisa memanggil konstruktot kosong.
+
+4.	Setelah melakukan instansiasi object, apakah method di dalam class Mahasiswa harus diakses secara berurutan? Jelaskan alasannya!
+jawaban : tidak, kita bisa menyesuaikan sesuai dengan kebutuhan kita, pemanggilan method dilakukan melalui objek, dan urutannya ditentukan oleh logika atau kebutuhan alur program, bukan posisi method yg didalam class
+
+5.	Buat object baru dengan nama mhs<NamaMahasiswa> menggunakan konstruktor berparameter dari class Mahasiswa!
+jawaban : Mahasiswa11 mhsMeliza = new Mahasiswa11("Meliza Haizi", "254107060160", 3.34, "SIB 1F");
+        mhsMeliza.updateIpk(3.50);
+        mhsMeliza.tampilkanInformasi();
